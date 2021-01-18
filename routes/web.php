@@ -19,7 +19,7 @@ Route::post('/logout',[LogoutController::class,'store'])->name('logout');
 Route::get('/login',[LoginContoller::class,'index'])->name('login');
 Route::post('/login',[LoginContoller::class, 'store']);
 
-Route::get('/register',[RegisterController::class, 'store'])->name('register');
+Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);
 
 Route::get('/post',[PostController::class,'index'])->name('posts');
